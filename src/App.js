@@ -10,6 +10,7 @@ import ComponenteClase from "./components/ejemplos/ComponenteClase";
 import CategoriasIndex from "./components/categorias";
 import ProductosIndex from "./components/productos";
 import UsuariosIndex from "./components/usuarios";
+import LoginView from "./components/usuarios/login";
 
 import { Route, Routes } from "react-router-dom";
 
@@ -17,7 +18,7 @@ function App() {
     return (
         <div>
             <div className="App">
-                <Navbar />
+                <Navbar logged={false} />
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/nosotros" element={<Nosotros />} />
@@ -25,6 +26,7 @@ function App() {
                     <Route path="/productos" element={<ProductosIndex />} />
                     <Route path="/categorias" element={<CategoriasIndex />} />
                     <Route path="/usuarios" element={<UsuariosIndex />} />
+                    <Route path="/login" element={<LoginView />} />
                     <Route
                         path="/ejemplos/funcion"
                         element={
