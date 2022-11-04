@@ -1,5 +1,6 @@
 import eliminar from "./eliminar.png";
 import { Link } from "react-router-dom";
+
 function EliminarTool(props) {
     let url = props.path + "/delete/" + props.id;
     return (

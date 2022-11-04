@@ -1,5 +1,12 @@
 import Table from "../table/Table";
 import getData from "../../js/getData";
+import MainPage from "../table/MainPage";
+import CreateButton from "../table/CreateBotton";
+import SearchBar from "../table/SearchBar";
+
+let objCss = {
+    border: "6px solid red",
+};
 
 function UsuariosIndex(props) {
     let datosTabla = getData("url", {}, "get", {});
@@ -7,8 +14,10 @@ function UsuariosIndex(props) {
     return (
         <div>
             <h3>Usuarios</h3>
-            <p>Bienvenidos a la pagina de administracion de usuarios</p>
-            <Table
+            <p style={objCss}>
+                Bienvenidos a la pagina de administracion de usuarios
+            </p>
+            <MainPage
                 data={datosTabla}
                 path={"/usuarios"}
                 name={"Tabla de Usuarios"}

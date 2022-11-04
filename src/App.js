@@ -7,6 +7,7 @@ import Footer from "./components/footer";
 import EjemplosIndex from "./components/ejemplos";
 import ComponenteFuncion from "./components/ejemplos/ComponenteFuncion";
 import ComponenteClase from "./components/ejemplos/ComponenteClase";
+import HookEjemplo from "./components/ejemplos/HookEjemplo";
 import CategoriasIndex from "./components/categorias";
 import ProductosIndex from "./components/productos";
 import UsuariosIndex from "./components/usuarios";
@@ -43,6 +44,7 @@ function App() {
                             />
                         }
                     />
+                    <Route path="/ejemplos/hook" element={<HookEjemplo />} />
                 </Routes>
 
                 <Footer />

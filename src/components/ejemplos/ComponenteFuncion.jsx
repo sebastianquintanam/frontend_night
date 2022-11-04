@@ -9,7 +9,7 @@ function ComponenteFuncion(props) {
                 officiis sed id at minima voluptatum!
             </p>
             <br />
-            <p>El mensjae es: {props.msn}</p>
+            <p>El mensaje es: {props.msn}</p>
         </div>
     );
 }
