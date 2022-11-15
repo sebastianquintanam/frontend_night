@@ -1,5 +1,5 @@
 import Table from "../table/Table";
-import getData from "../../js/getData";
+import { getData } from "../../js/getData";
 import MainPage from "../table/MainPage";
 import CreateButton from "../table/CreateBotton";
 import SearchBar from "../table/SearchBar";
